@@ -1,0 +1,19 @@
+/data/
+/fastoma_input/
+/reports/
+
+.nextflow/
+.nextflow.log*
+work/
+output/
+
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*
+
+
+# macOS housekeeping
+.DS_Store
