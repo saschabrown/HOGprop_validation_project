@@ -57,21 +57,13 @@ def check_proteome(species_names, prot_recs_lists, proteome_folder):
                 logger.error("Check input failed. FastOMA halted!")
                 return False
                 
-        # checking only first record in each species  # for ii in range(len(prot_recs_list)):
-        # check that at least 20% of all residue are not DNA/RNA characters (as a check for protein sequences)
-        residue_cnts = collections.Counter(itertools.chain.from_iterable(rec.seq.upper() for rec in prot_recs_list))
-        aa_chars = set(extended_protein_letters) - set(unambiguous_dna_letters) - set(unambiguous_rna_letters) - set('N')
-        total_aa = sum([residue_cnts[aa] for aa in aa_chars])
-        if total_aa / sum(residue_cnts.values()) < 0.2:
-            logger.error("Looks like genomics sequences used in '%s'. Proteome contains only %.1f%% amino acids letters.", species_name,  100 * total_aa / sum(residue_cnts.values()))
-            return False
-
         num_prots = len(prot_recs_list)  # >EP00159_Fonticula_alba_P004948_XP_009497064.1_small_nuclear_ribonucleoprotein_B_and_B'_Fonticula_alba||691883||1155004948
         num_prots_all += num_prots
         # todo , check duplicated Ids should it be done on all species ?
 
-        if num_prots <= 2:
-            logger.error("The input proteome looks empty or too few proteins or Bio.SeqIO couldn't read it, %s/%s.fa", proteome_folder, species_name)
+        # Each proteome must contain at least one protein record.
+        if num_prots < 1:
+            logger.error("The input proteome contains no protein records or Bio.SeqIO couldn't read it, %s/%s.fa", proteome_folder, species_name)
             isOk = False
 
     # todo write new protoems with cleaned record ids, keep the mapping, to be used in orthoxml writing
