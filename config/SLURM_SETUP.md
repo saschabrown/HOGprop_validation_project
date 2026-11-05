@@ -39,7 +39,7 @@ Before submission, Sascha must create `logs/slurm` under the project directory: 
 After confirming the current project path and activating the chosen environment, run this in a GenomeDK terminal **from the repository root**. This resolves and prints configuration; it does not launch the pipeline or submit Slurm tasks. Nextflow may initialize or download its configured plugins or included configuration during setup.
 
 ```bash
-nextflow config ./FastOMA -profile slurm,large -c ./config/fastoma_genomedk_slurm.config -flat
+nextflow -c ./config/fastoma_genomedk_slurm.config config ./FastOMA -profile slurm,large -flat
 ```
 
 Share the relevant `process.executor`, `clusterOptions`, `queueSize`, `resourceLimits`, `min_sequence_length`, `omamer_db`, and `beforeScript` settings before preparing the final batch launch command. Do not share credentials. Do not submit until the environment, regenerated inputs, and resolved configuration have been checked.
