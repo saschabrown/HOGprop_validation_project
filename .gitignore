@@ -17,3 +17,9 @@ __pycache__/
 
 # macOS housekeeping
 .DS_Store
+
+# Generated FastOMA results and working files
+/fastoma_output/
+/fastoma_work/
+/logs/
+/irene_cafa_oma_fasta_pairs.tsv
