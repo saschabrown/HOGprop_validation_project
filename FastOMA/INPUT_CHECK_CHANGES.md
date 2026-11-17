@@ -1,5 +1,7 @@
 # FastOMA input-check and parameter changes
 
+OMA path correction (5 November 2026): cell 5 of the preparation notebook now uses `/home/saschabrown/evomics_projects/saschabrown/oma_full_database` for `oma_input_dir`, based on Sascha's file lookup. This replaces the old space-separated folder name. Saved outputs remain historical; no cells were run for this correction.
+
 Date: 5 November 2026
 
 File: `FastOMA/check_input.py` (relative to this FastOMA directory).

@@ -23,3 +23,6 @@ __pycache__/
 /fastoma_work/
 /logs/
 /irene_cafa_oma_fasta_pairs.tsv
+
+# Separate upstream checkout; version recorded in Hogprop/README.md
+/Hogprop/hogprop/
