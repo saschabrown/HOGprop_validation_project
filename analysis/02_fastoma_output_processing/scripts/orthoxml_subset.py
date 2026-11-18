@@ -10,7 +10,7 @@ import argparse
 from typing import Set, Optional
 import lxml.etree as etree
 import logging
-from parser import StreamOrthoXMLParser, OrthoXMLStreamWriter, process_stream_orthoxml
+from orthoxml.parsers import StreamOrthoXMLParser, OrthoXMLStreamWriter, process_stream_orthoxml
 
 
 logger = logging.getLogger(__name__)

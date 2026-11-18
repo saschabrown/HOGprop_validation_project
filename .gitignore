@@ -24,5 +24,9 @@ __pycache__/
 /logs/
 /irene_cafa_oma_fasta_pairs.tsv
 
-# Separate upstream checkout; version recorded in Hogprop/README.md
-/Hogprop/hogprop/
+# Separate upstream HOGprop checkout
+/software/hogprop/
+
+# Per-stage run data and reports
+/analysis/*/data/
+/analysis/*/results/

@@ -4,7 +4,7 @@ Checkpoint recorded 2026-11-17 before restructuring.
 
 `orthoxml_subset.py` preserves Irene's supplied script and author header. It selects complete root HOGs by a supplied ID list and writes their associated gene registry. No scientific behavior was changed for this checkpoint.
 
-The script requires `lxml` and the external `parser` module exposing `StreamOrthoXMLParser`, `OrthoXMLStreamWriter`, and `process_stream_orthoxml`. That parser implementation is not bundled here. Dependency packaging and notebook integration remain pending; this is not yet a standalone reproducible installation.
+The script requires `lxml` and the `orthoxml.parsers` module from `orthoxml-tools`. The saved Stage 02 run used `orthoxml-tools==1.3.1`. The restructure uses that module directly for both CLI and notebook imports.
 
 The function docstring mentions a `prot_ids` argument that the current signature does not accept. Use root HOG IDs through the existing `-t` option. Syntax was checked for this checkpoint; no extraction was run.
 
