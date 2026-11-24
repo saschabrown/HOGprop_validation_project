@@ -1,0 +1,3 @@
+[submodule "OMA_orthoxml"]
+	path = analysis/02_fastoma_output_processing/OMA_orthoxml
+	url = https://github.com/EvOmics-Lab/OMA_orthoxml.git

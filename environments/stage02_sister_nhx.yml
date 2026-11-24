@@ -1,0 +1,9 @@
+name: stage02_sister_nhx
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12.14
+  - biopython=1.88
+  - lxml=6.1.3
+  - dendropy=5.1.0
+  - ipykernel=7.3.0

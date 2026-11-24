@@ -1,0 +1,87 @@
+{
+  "final_shapes": {
+    "HOG:0000001_1": [
+      "S",
+      [
+        "S",
+        "1",
+        "2",
+        "3",
+        "60",
+        "61"
+      ],
+      [
+        "D",
+        "4",
+        "30"
+      ],
+      "5",
+      "40"
+    ],
+    "HOG:0000004_1": [
+      "S",
+      "7",
+      "70",
+      "71"
+    ]
+  },
+  "selected_roots": [
+    "HOG:0000001_1",
+    "HOG:0000002_1",
+    "HOG:0000004_1",
+    "HOG:0000005_1"
+  ],
+  "singletons": [
+    "6",
+    "8"
+  ],
+  "unassigned": [
+    "9"
+  ],
+  "removed_oma": [
+    "10",
+    "20",
+    "80"
+  ],
+  "removed_test": [
+    "11",
+    "12",
+    "13",
+    "14",
+    "15"
+  ],
+  "decisions": {
+    "1": [
+      "highest_identity",
+      "20"
+    ],
+    "2": [
+      "highest_identity",
+      "20"
+    ],
+    "3": [
+      "identity_tie",
+      "10"
+    ],
+    "4": [
+      "no_eligible_sister",
+      ""
+    ],
+    "5": [
+      "no_eligible_sister",
+      ""
+    ],
+    "6": [
+      "single",
+      "80"
+    ],
+    "7": [
+      "missing_sequence",
+      ""
+    ],
+    "8": [
+      "no_eligible_sister",
+      ""
+    ]
+  }
+}

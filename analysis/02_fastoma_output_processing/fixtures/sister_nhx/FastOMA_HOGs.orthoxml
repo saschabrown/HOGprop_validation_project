@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='utf-8'?>
+<orthoXML xmlns="http://orthoXML.org/2011/" version="0.5" origin="synthetic fixture">
+  <species name="9606">
+    <database name="fixture" version="1">
+      <genes>
+        <gene id="1" protId="TR1_9606_train" />
+        <gene id="2" protId="TR2_9606_train" />
+        <gene id="3" protId="TR3_9606_train" />
+        <gene id="4" protId="TR4_9606_train" />
+        <gene id="5" protId="TR5_9606_train" />
+        <gene id="6" protId="TR6_9606_train" />
+        <gene id="7" protId="TR7_9606_train" />
+        <gene id="8" protId="TR8_9606_train" />
+        <gene id="9" protId="TR9_9606_train" />
+        <gene id="11" protId="TS11_9606_test" />
+        <gene id="12" protId="TS12_9606_test" />
+        <gene id="13" protId="TS13_9606_test" />
+        <gene id="14" protId="TS14_9606_test" />
+        <gene id="15" protId="TS15_9606_test" />
+        <gene id="16" protId="TS16_9606_test" />
+      </genes>
+    </database>
+  </species>
+  <species name="HUMAN">
+    <database name="fixture" version="1">
+      <genes>
+        <gene id="10" protId="HUMAN10" />
+        <gene id="20" protId="HUMAN20" />
+        <gene id="30" protId="HUMAN30" />
+        <gene id="40" protId="HUMAN40" />
+        <gene id="70" protId="HUMAN70" />
+        <gene id="71" protId="HUMAN71" />
+        <gene id="80" protId="HUMAN80" />
+        <gene id="90" protId="HUMAN90" />
+      </genes>
+    </database>
+  </species>
+  <species name="OTHER">
+    <database name="fixture" version="1">
+      <genes>
+        <gene id="61" protId="OTHER61" />
+      </genes>
+    </database>
+  </species>
+  <species name="NOMAP">
+    <database name="fixture" version="1">
+      <genes>
+        <gene id="60" protId="NOMAP60" />
+      </genes>
+    </database>
+  </species>
+  <groups>
+    <orthologGroup id="HOG:0000001_1">
+      <property name="TaxRange" value="Fixture level" />
+      <property name="taxid" value="9606" />
+      <orthologGroup>
+        <property name="TaxRange" value="Fixture level" />
+        <property name="taxid" value="9606" />
+        <orthologGroup>
+          <property name="TaxRange" value="Fixture level" />
+          <property name="taxid" value="9606" />
+          <geneRef id="1" />
+          <geneRef id="2" />
+          <geneRef id="3" />
+          <geneRef id="10" />
+          <geneRef id="20" />
+          <geneRef id="60" />
+          <geneRef id="61" />
+        </orthologGroup>
+        <paralogGroup>
+          <property name="TaxRange" value="Fixture level" />
+          <property name="taxid" value="9606" />
+          <geneRef id="4" />
+          <geneRef id="30" />
+        </paralogGroup>
+        <orthologGroup>
+          <property name="TaxRange" value="Fixture level" />
+          <property name="taxid" value="9606" />
+          <geneRef id="11" />
+          <geneRef id="12" />
+        </orthologGroup>
+        <paralogGroup>
+          <property name="TaxRange" value="Fixture level" />
+          <property name="taxid" value="9606" />
+          <geneRef id="5" />
+          <geneRef id="13" />
+        </paralogGroup>
+        <orthologGroup>
+          <property name="TaxRange" value="Fixture level" />
+          <property name="taxid" value="9606" />
+          <geneRef id="14" />
+          <geneRef id="40" />
+        </orthologGroup>
+      </orthologGroup>
+    </orthologGroup>
+    <orthologGroup id="HOG:0000002_1">
+      <property name="TaxRange" value="Fixture level" />
+      <property name="taxid" value="9606" />
+      <geneRef id="6" />
+      <geneRef id="80" />
+      <geneRef id="15" />
+    </orthologGroup>
+    <orthologGroup id="HOG:0000003_1">
+      <property name="TaxRange" value="Fixture level" />
+      <property name="taxid" value="9606" />
+      <geneRef id="16" />
+      <geneRef id="90" />
+    </orthologGroup>
+    <orthologGroup id="HOG:0000004_1">
+      <property name="TaxRange" value="Fixture level" />
+      <property name="taxid" value="9606" />
+      <geneRef id="7" />
+      <geneRef id="70" />
+      <geneRef id="71" />
+    </orthologGroup>
+    <orthologGroup id="HOG:0000005_1">
+      <property name="TaxRange" value="Fixture level" />
+      <property name="taxid" value="9606" />
+      <geneRef id="8" />
+    </orthologGroup>
+  </groups>
+</orthoXML>
